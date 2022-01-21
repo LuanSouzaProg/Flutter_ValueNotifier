@@ -1,12 +1,20 @@
 import 'package:flutter/cupertino.dart';
 
-class HomeController extends ChangeNotifier{
+// class HomeController{
+//
+//   //podemos ter quantas reatividades que quisermos
+//   var counter$ = ValueNotifier(0);
+//   var loading$ = ValueNotifier(true);
+//
+//   int get counter => counter$.value;
+//
+//   void increment() => counter$.value++;
+// }
 
-  var counter = 0;
+class Counter extends ValueNotifier<int>{
+  Counter() : super(0);
 
-  void increment(){
-    counter++;
-    notifyListeners();
-  }
-
+  increment() => value++;
+  decrement() => value--;
 }
+
