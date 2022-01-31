@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'home/home_page.dart';
+import 'package:luan/src/products/product_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -12,7 +11,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: const ProductPage(),
     );
   }
 }
