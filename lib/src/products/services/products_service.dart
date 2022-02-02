@@ -8,7 +8,7 @@ class ProductService {
   ProductService(this.uno);
 
   Future<List<ProductModel>> fetchProducts() async{
-    //falta passar a URL
+    //falta passar a URL do dartion
     final response = await uno.get("url");
 
     final list = response.data as List;
